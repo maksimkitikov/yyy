@@ -17,7 +17,7 @@ export default function LectureForm({ onSubmit }: { onSubmit: (lecture: Lecture)
   const [description, setDescription] = useState('');
   const [videoUrl, setVideoUrl] = useState('');
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     const newLecture: Lecture = {
       id: Date.now().toString(),
