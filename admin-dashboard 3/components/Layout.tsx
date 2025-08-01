@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { ReactNode } from 'react';
+
 
 /**
  * Компонент макета, который отображает шапку с навигацией и
@@ -10,7 +10,7 @@ import { ReactNode } from 'react';
  * Навигация содержит ссылки на главные разделы: дашборд,
  * создание курса и создание лекции.
  */
-export default function Layout({ children }: { children: ReactNode }) {
+export default function Layout({ children }: { children: any }) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Шапка */}

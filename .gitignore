@@ -1,0 +1,11 @@
+node_modules/
+venv/
+*.pyc
+__pycache__/
+backend/__pycache__/
+backend/*.db
+admin-dashboard 3/node_modules/
+admin-dashboard 3/package-lock.json
+admin-dashboard 3/.next/
+!admin-dashboard 3/node_modules/@types/
+admin-dashboard 3/tsconfig.tsbuildinfo

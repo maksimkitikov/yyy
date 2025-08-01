@@ -17,7 +17,7 @@ export default function CourseForm({ onSubmit }: { onSubmit: (course: Course) =>
   const [description, setDescription] = useState('');
   const [videoUrl, setVideoUrl] = useState('');
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // Формируем курс с уникальным идентификатором (на основе времени)
     const newCourse: Course = {

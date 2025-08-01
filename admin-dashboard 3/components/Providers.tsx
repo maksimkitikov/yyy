@@ -1,6 +1,5 @@
 "use client";
 
-import { ReactNode } from 'react';
 import { DataProvider } from '../contexts/DataProvider';
 
 /**
@@ -10,6 +9,6 @@ import { DataProvider } from '../contexts/DataProvider';
  * При необходимости сюда можно добавить другие провайдеры (например,
  * для темизации или управления авторизацией).
  */
-export default function Providers({ children }: { children: ReactNode }) {
+export default function Providers({ children }: { children: any }) {
   return <DataProvider>{children}</DataProvider>;
 }

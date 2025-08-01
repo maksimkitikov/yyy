@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import { Course } from '../types/course';
 import { Lecture } from '../types/lecture';
 import { mockCourses, mockLectures } from '../mock/data';
@@ -26,7 +26,7 @@ const DataContext = createContext<DataContextProps | undefined>(undefined);
  * В реальном приложении здесь можно организовать загрузку данных
  * через API и обновление стейта в соответствии с ответами сервера.
  */
-export function DataProvider({ children }: { children: ReactNode }) {
+export function DataProvider({ children }: { children: any }) {
   // Инициализируем состояние списков курсов и лекций
   const [courses, setCourses] = useState<Course[]>(mockCourses);
   const [lectures, setLectures] = useState<Lecture[]>(mockLectures);

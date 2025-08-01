@@ -11,7 +11,7 @@ import { useRouter } from 'next/navigation';
 export default function LoginPage() {
   const router = useRouter();
 
-  const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleLogin = (e: any) => {
     e.preventDefault();
     // Просто переходим на страницу дашборда; в будущем здесь
     // можно реализовать вызов API для проверки учётных данных
